@@ -382,6 +382,25 @@ footer {
     color: var(--primary-color);
 }
 
+/* Policy Pages */
+.policy-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.policy-section h2 {
+    text-align: center;
+    font-size: var(--fluid-h2);
+    margin-bottom: 40px;
+}
+
+.policy-section p {
+    color: var(--subtle-text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
