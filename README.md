@@ -26,7 +26,7 @@ git commit -m "Initial commit"
 
 # Add your GitHub repository as a remote
 # Replace <your-repo-url> with the URL of the repository you created
-git remote add origin <your-repo-url>
+git remote add origin <https://github.com/VertexDigital1420/VertexDigitalServices.git>
 
 # Push your code to the main branch
 git push -u origin main
