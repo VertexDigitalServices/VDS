@@ -13,7 +13,7 @@
     <div class="container">
         <header>
             <div class="logo">Vertex Digital Services</div>
-            <nav>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#">Methodology</a></li>
@@ -22,11 +22,14 @@
                 </ul>
             </nav>
             <a href="#contact" class="contact-btn">Contact &rarr;</a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </header>
 
         <section class="hero">
             <p>Building Smart Digital Solutions</p>
-            <h1>We build digital products that power businesses/SMEs/Startups.</h1>
+            <h1>We build digital products that power businesses/SMEs</h1>
             <p class="subtitle">Providing reliable app and web development services to help businesses and individuals grow digitally.</p>
             <a href="#services" class="services-btn">Our Services &rarr;</a>
         </section>
@@ -109,6 +112,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
