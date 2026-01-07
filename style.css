@@ -95,7 +95,6 @@ header {
     margin-bottom: 20px;
     line-height: 1.2;
     word-wrap: break-word;
-    word-break: break-all;
 }
 
 .hero p {
@@ -170,6 +169,122 @@ h2 {
 .card p {
     color: var(--subtle-text-color);
 }
+
+/* Methodology Section */
+.methodology {
+    padding: 60px 20px;
+}
+
+.methodology-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.methodology-steps::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: var(--fluid-h3);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: var(--subtle-text-color);
+    margin-top: 0;
+}
+
+/* Advantages Section */
+.advantages {
+    padding: 60px 20px;
+}
+
+.advantages-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.advantages-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: var(--fluid-p);
+}
+
+.advantages-list i {
+    color: var(--primary-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+
+.testimonial-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--subtle-text-color);
+    margin: 0;
+}
+
+.coming-soon {
+    text-align: center;
+    color: var(--subtle-text-color);
+    margin-top: 40px;
+}
+
 
 /* Contact Section */
 .contact {
