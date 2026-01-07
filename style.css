@@ -78,11 +78,31 @@ header {
 .hamburger-menu {
     display: none;
     cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
 }
 
-.hamburger-menu i {
-    font-size: 1.5rem;
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 
 /* Hero Section */
 .hero {
@@ -413,6 +433,8 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
+        z-index: 9;
+        border-top: 1px solid var(--primary-color);
     }
 
     .nav-menu.active {
@@ -425,7 +447,7 @@ footer {
     }
 
     .hamburger-menu {
-        display: block;
+        display: flex; /* Changed from block to flex */
     }
 
     .contact-btn {

@@ -23,7 +23,9 @@
             </nav>
             <a href="#contact" class="contact-btn">Contact &rarr;</a>
             <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </header>
 
@@ -193,9 +195,18 @@
     <script>
         const hamburgerMenu = document.querySelector('.hamburger-menu');
         const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
         hamburgerMenu.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburgerMenu.classList.remove('active');
+            });
         });
     </script>
 
